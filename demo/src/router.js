@@ -10,8 +10,8 @@ import Character from './components/Character/Character.js';
 export default (
     <div>
       <Route exact path='/' component={Home}/>
-      <Route path='/about' render={() => {
-        return (
+      <Route path='/about' render={() =>
+        (
           <About>
             <Switch>
               <Route path='/about/faq' component={FAQ}/>
@@ -19,7 +19,7 @@ export default (
             </Switch>
           </About>
         )
-      }} />
+      } />
       <Switch>
         <Route path='/people/:id' component={Character}/>
         <Route path='/people' component={People}/>
