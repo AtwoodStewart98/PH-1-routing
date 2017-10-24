@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Nav from './Nav/Nav';
 import router from '../router.js';
 
 
@@ -6,7 +7,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        {/* before all the routing was in this file... we moved it to router.js for organization */}
+          <Nav />
           {router}
       </div>
     );

@@ -9,9 +9,6 @@ import Character from './components/Character/Character.js';
 
 export default (
     <div>
-      <Link to='/'>Home</Link>
-      <Link to='/about'>About</Link>
-      <Link to='/people'>People</Link>
       <Route exact path='/' component={Home}/>
       <Route path='/about' render={() => {
         return (
